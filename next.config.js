@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const withSass = require("@zeit/next-sass");
+const nextConfig = {};
 
-module.exports = nextConfig
+module.exports = withSass();
