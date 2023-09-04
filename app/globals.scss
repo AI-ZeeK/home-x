@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900&family=Poppins:ital,wght@0,400;0,500;0,600;1,400&display=swap");
+:root {
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* body {
+ 
+} */
+.circular-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  animation: rotate 2000ms linear infinite;
+  pointer-events: none;
+}
+.svg {
+  fill: currentColor;
+  height: auto;
+  transform: translateY(50%);
+  max-width: 66vmin;
+  transform-origin: center;
+  width: 100%;
+}
+.text-rotate-block {
+  &:hover {
+    .icon {
+      transform: rotate(-45deg);
+    }
+    .svg-text {
+      animation: rotate 20000ms linear infinite;
+    }
+    .text-2 {
+      animation: rotate-2 20000ms linear infinite;
+    }
+    .text-3 {
+      animation: rotate-3 20000ms linear infinite;
+    }
+  }
+}
+
+.svg-text {
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition: all 300ms ease;
+  animation: none;
+}
+.text-2 {
+  transform: rotate(120deg);
+}
+.text-3 {
+  transform: rotate(240deg);
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-2 {
+  from {
+    transform: rotate(120deg);
+  }
+  to {
+    transform: rotate(480deg);
+  }
+}
+@keyframes rotate-3 {
+  from {
+    transform: rotate(240deg);
+  }
+  to {
+    transform: rotate(600deg);
+  }
+}
+
+.img-bg-cover {
+  background: rgb(32, 32, 32);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.806) 0%,
+    rgba(215, 215, 215, 0.197) 80%
+  );
+}
+
+.agent-img {
+  img {
+    transition: 600ms ease-in-out;
+  }
+  .img-bg-cover {
+    bottom: -100%;
+    transition: 800ms ease;
+    backdrop-filter: blur(1px);
+  }
+  &:hover {
+    img {
+      scale: 1.1;
+    }
+
+    .img-bg-cover {
+      bottom: 0;
+    }
+  }
+}
