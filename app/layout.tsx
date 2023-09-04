@@ -1,4 +1,3 @@
-"use client";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import "./globals.scss";
@@ -9,8 +8,9 @@ import {Providers} from "@/redux/provider";
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
-  title: "Homes Apartments",
+  title: "Homez Apartments",
   description: "Get your holiday apartments",
+  icons: [{rel: "icon", url: "/homez-logo-light.ico"}],
 };
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
