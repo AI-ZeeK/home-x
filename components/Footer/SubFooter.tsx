@@ -85,13 +85,15 @@ const SubFooter = (props: Props) => {
             Meant balls it if up doubt small purse. Required his you put the
             outlived answered position.
           </p>
-          <div className="border-2 border-white grid grid-cols-[2.5fr_1fr] justify-between items-center">
+          <div className="border-2 border-white grid above-480:grid-cols-[2.5fr_1fr]  items-center">
             <input
               className="bg-black text-white py-3 px-2 outline-none"
               type="text"
               placeholder="your email"
             />
-            <button className="bg-white text-black py-3 px-3">Submit</button>
+            <button className="bg-white text-black py-3 w-full px-3">
+              Submit
+            </button>
           </div>
         </div>
       </div>
