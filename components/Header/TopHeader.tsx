@@ -17,13 +17,13 @@ const TopHeader = (props: Props) => {
 
   return (
     <nav className="flex justify-between items-center p-2 sm:p-4 h-20 z-50 bg-white relative lg:px-6 ">
-      <div className="h-10 w-40">
+      <Link href="/" className="h-10 w-40">
         <img
           className="object-contain h-full w-full"
           src="/homez-logo.svg"
           alt=""
         />
-      </div>
+      </Link>
       <div className="flex gap-6 justify-center items-center">
         <ul className="justify-center items-center gap-2 hidden md:flex">
           {navData.map((data: NavType) => (
